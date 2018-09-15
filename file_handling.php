@@ -13,6 +13,9 @@ echo fgets($myfile);
 fclose($myfile);
 
 
+echo "<br>----------------------------------------------<br>";
+
+
 // Reading a complete file using fgets
 $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
 // Output one line until end-of-file
@@ -20,6 +23,9 @@ while(!feof($myfile)) {
   echo fgets($myfile) . "<br>";
 }
 fclose($myfile);
+
+
+echo "<br>----------------------------------------------<br>";
 
 
 // Reading a complete file using fgetc
