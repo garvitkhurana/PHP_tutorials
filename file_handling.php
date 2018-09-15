@@ -13,11 +13,22 @@ echo fgets($myfile);
 fclose($myfile);
 
 
-// Reading a file using fgets
+// Reading a complete file using fgets
 $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
 // Output one line until end-of-file
 while(!feof($myfile)) {
   echo fgets($myfile) . "<br>";
 }
 fclose($myfile);
+
+
+// Reading a complete file using fgetc
+
+$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+// Output one character until end-of-file
+while(!feof($myfile)) {
+  echo fgetc($myfile);
+}
+fclose($myfile);
+
 ?>
