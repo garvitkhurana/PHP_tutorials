@@ -73,16 +73,36 @@ echo $a[2][1],"<br>";
 echo $a[2][2],"<br>";
 
 
-
+//array chunk
 $age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43","Harry"=>"50");
 print_r(array_chunk($age,2,true));
 
-// print_r(array_chunk($age,2));
+print_r(array_chunk($age,2));
 
 
+// array difference
+$a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+$a2=array("e"=>"red","f"=>"green","c"=>"blue");
+
+$result=array_diff($a1,$a2);
+print_r($result);
+
+echo "<br>";
+
+$result=array_diff_assoc($a1,$a2);
+print_r($result);
+echo "<br>";
+
+// ltrim example
+$str = "Hello World!";
+echo $str . "<br>";
+echo ltrim($str,"H");
+echo "<br>";
 
 
-
-
+//strpos and strrpos
+$a= “hello World!”;
+echo strpos($a,”l”),”<br>”;
+echo strrpos($a,”l”); 
 
 ?>
