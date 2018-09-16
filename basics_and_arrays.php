@@ -101,8 +101,8 @@ echo "<br>";
 
 
 //strpos and strrpos
-$a= “hello World!”;
-echo strpos($a,”l”),”<br>”;
-echo strrpos($a,”l”); 
+$a= "hello World!";
+echo strpos($a,"l"),"<br>";
+echo strrpos($a,"l"); 
 
 ?>
