@@ -63,12 +63,10 @@ for ($x = 0; $x <= 10; $x++) {
 echo "<br>";
 
 //for each
-$colors = array("red", "green", "blue", "yellow");
+$colors = array("red"=>12, "green"=>19, "blue"=>11, "yellow"=>13);
 
-foreach ($colors as $value) {
-  echo "$value <br>";
+foreach ($colors as $k=>$v) {
+  echo "$k == $v <br>";
 }
-
-
 
 ?>
