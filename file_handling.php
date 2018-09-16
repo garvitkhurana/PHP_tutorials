@@ -37,4 +37,12 @@ while(!feof($myfile)) {
 }
 fclose($myfile);
 
+// Reading/writing an entire file
+
+
+$text = file_get_contents("webdictionary.txt");
+$text = strrev($text);
+file_put_contents("poem.txt", $text);
+
+
 ?>
