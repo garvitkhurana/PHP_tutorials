@@ -6,6 +6,8 @@
 <?php
 echo "Name: ",$_POST["name"],"<br>";
 echo "Age: ",$_POST["age"];
+echo "Name",$_REQUEST["name"];
+
  ?>
 </body>
 <html>
