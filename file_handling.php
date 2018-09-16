@@ -42,7 +42,17 @@ fclose($myfile);
 
 $text = file_get_contents("webdictionary.txt");
 $text = strrev($text);
-file_put_contents("poem.txt", $text);
+file_put_contents("webdictionary.txt", $text);
+
+echo "<br>----------------------------------------------<br>";
+
+
+foreach (file("books.txt") as $book) {
+  echo "$book<br>";
+	list($title, $author) = explode(",", $book);
+	echo "<p> Book title: "."$title","Author :"."$author","</p>";
+}
+
 
 
 ?>
