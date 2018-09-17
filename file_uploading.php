@@ -12,10 +12,9 @@
 </html>
 
 
-// For uploading text file
+<!-- // For uploading text file
 
-
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Upload your files</title>

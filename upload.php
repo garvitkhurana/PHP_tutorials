@@ -1,6 +1,10 @@
 <?php
-$target_dir = "uploads/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);// basename() function returns the filename from a path.
+
+mkdir(uploads);
+chdir(uploads);
+$target_dir=getcwd();
+
+$target_file = $target_dir."/".basename($_FILES["fileToUpload"]["name"]);// basename() function returns the filename from a path.
 echo "$target_file<br>";
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));//to get uploaded file extension
@@ -46,20 +50,18 @@ if ($uploadOk == 0) {
 
 
 
-// For uploading text file
-
-<?PHP
-  if(!empty($_FILES['uploaded_file']))
-  {
-    $path = "uploads/";
-    $path = $path . basename( $_FILES['uploaded_file']['name']);
-    if(move_uploaded_file($_FILES['uploaded_file']['tmp_name'], $path)) {
-      echo "The file ".  basename( $_FILES['uploaded_file']['name']).
-      " has been uploaded";
-    } else{
-        echo "There was an error uploading the file, please try again!";
-    }
-  }
-
+// // For uploading text file
+//
+// <?PHP
+//   if(!empty($_FILES['uploaded_file']))
+//   {
+//     $path = $target_dir."/".basename( $_FILES['uploaded_file']['name']);
+//     if(move_uploaded_file($_FILES['uploaded_file']['tmp_name'], $path))
+//     {
+//       echo "The file ".  basename( $_FILES['uploaded_file']['name'])." has been uploaded";
+//     } else{
+//         echo "There was an error uploading the file, please try again!";
+//     }
+//   }
 
 ?>
