@@ -46,9 +46,6 @@ if ($uploadOk == 0) {
 
 
 
-
-
-
 // For uploading text file
 
 
