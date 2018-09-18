@@ -1,8 +1,7 @@
-
-egaugnaL pukraM elbisnetXE = LMX
->rb< scihparG rotceV elbalacS = GVS
->rb< egaugnaL yreuQ derutcurtS = LQS
->rb< rossecorperP txetrepyH PHP = PHP
->rb< egaugnaL pukraM txeT repyH = LMTH
->rb< steehS elytS gnidacsaC = SSC
->rb< LMX dna tpircSavaJ suonorhcnysA = XAJA
+AJAX = Asynchronous JavaScript and XML <br>
+CSS = Cascading Style Sheets <br>
+HTML = Hyper Text Markup Language <br>
+PHP = PHP Hypertext Preprocessor <br>
+SQL = Structured Query Language <br>
+SVG = Scalable Vector Graphics <br>
+XML = EXtensible Markup Language
