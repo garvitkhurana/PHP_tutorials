@@ -28,7 +28,7 @@ echo "<br>----------------------------------------------<br>";
 
 
 //
-$query="select name from movies where name like'%i'";
+$query="select name from movies where name like'%'";
 $result=mysqli_query($link,$query);
 if($result)
 {echo "Query has been executed<br>";}
